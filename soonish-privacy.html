@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,30 +13,29 @@
             margin: 0 auto;
             color: var(--text-muted);
         }
-        .privacy-content h2,
-        .privacy-content h3 {
+
+        .privacy-content h2 {
             color: #fff;
-            margin: 2.5rem 0 1rem;
-            font-family: var(--font-sans);
+            margin: 2rem 0 1rem;
         }
+
         .privacy-content p {
-            margin-bottom: 1.2rem;
+            margin-bottom: 1rem;
         }
+
         .privacy-content ul {
-            margin-left: 2rem;
+            margin-left: 1.5rem;
             margin-bottom: 1.5rem;
-        }
-        .privacy-content li {
-            margin-bottom: 0.5rem;
         }
     </style>
 </head>
+
 <body>
     <div class="bg-gradient-spots"></div>
-    
+
     <nav class="navbar">
         <div class="container flex justify-between items-center">
-            <a href="soonish.html" class="logo" style="font-size: 1.2rem;">&larr; Back to Soonish</a>
+            <a href="soonish.html" class="logo" style="font-size: 1.2rem;">← Back to Soonish</a>
             <div class="nav-links">
                 <a href="index.html">BuildNex.Tech</a>
             </div>
@@ -45,43 +45,78 @@
     <section class="section" style="padding-top: 140px;">
         <div class="container privacy-content">
             <div class="reveal">
-                <h1 class="font-display text-gradient" style="font-size: 3rem; margin-bottom: 1rem;">Privacy Policy</h1>
-                <p style="color: #fff; font-weight: 500;">Effective Date: March 26, 2026</p>
-                
-                <div class="card" style="margin-top: 3rem; padding: 40px; background: rgba(25, 20, 40, 0.4);">
-                    <p>At BuildNex.Tech, we believe your data is yours alone. This Privacy Policy outlines our commitment to your privacy when you use our application, <strong>Soonish</strong> ("the App").</p>
-                    
-                    <h2>1. Data Storage & Local Processing</h2>
-                    <p>We built Soonish with a strict <strong>"Local-First"</strong> architecture. All your reminders, tasks, and settings are stored locally on your device using <code>localStorage</code> or local database mechanisms. We do not operate any external database to sync or store your personal data.</p>
-                    
-                    <h2>2. Information Collection And Use</h2>
-                    <p><strong>We DO NOT collect, store, or transmit any Personally Identifiable Information (PII).</strong> Specifically:</p>
+                <h1 class="font-display text-gradient" style="font-size: 3rem; margin-bottom: 1rem;">
+                    Privacy Policy
+                </h1>
+
+                <p style="color: #fff;">
+                    Effective Date: March 26, 2026
+                </p>
+
+                <div class="card" style="margin-top: 2rem; padding: 40px; background: rgba(25, 20, 40, 0.4);">
+
+                    <p>
+                        Soonish is designed to be simple and private. Most of your data stays on your device.
+                    </p>
+
+                    <h2>Data Storage</h2>
+                    <p>
+                        Your reminders and settings are stored locally on your device. We do not store your reminder
+                        content on external servers.
+                    </p>
+
+                    <h2>Data Collection</h2>
+                    <p>
+                        We do not collect personal information such as your name, email, or phone number.
+                    </p>
                     <ul>
-                        <li>We do not require you to create an account.</li>
-                        <li>We do not ask for your name, email address, or phone number within the App.</li>
-                        <li>We do not record your keystrokes or the contents of your reminders.</li>
+                        <li>No account required</li>
+                        <li>No access to reminder content</li>
                     </ul>
 
-                    <h2>3. Advertising and Analytics</h2>
-                    <p>Soonish is completely ad-free. To protect your privacy:</p>
+                    <h2>Analytics</h2>
+                    <p>
+                        We use Firebase Analytics to understand how the app is used and to improve performance.
+                    </p>
                     <ul>
-                        <li>We have explicitly disabled Firebase Advertising ID collection.</li>
-                        <li>We do not integrate third-party ad networks tracking SDKs into the App.</li>
-                        <li>We do not track your behavior across other apps or websites.</li>
+                        <li>No Advertising ID is collected</li>
+                        <li>No personalized advertising</li>
+                        <li>No tracking across other apps or websites</li>
                     </ul>
 
-                    <h2>4. We Do Not Sell Data</h2>
-                    <p>Because we do not gather any data about you, there is absolutely no data for us to sell or share with any third parties, advertisers, or data brokers.</p>
+                    <h2>Ads</h2>
+                    <p>
+                        Soonish does not display ads.
+                    </p>
 
-                    <h2>5. Required Permissions</h2>
-                    <p>The App may request permissions necessary for core functionality (such as displaying notifications on your lock screen). These permissions are strictly used to operate the features as intended on your device and never to harvest information.</p>
+                    <h2>Permissions</h2>
+                    <p>
+                        The app may request permissions required for core features, such as notifications. These are
+                        only used to make the app work.
+                    </p>
 
-                    <h2>6. Changes to This Privacy Policy</h2>
-                    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
+                    <h2>Data Sharing</h2>
+                    <p>
+                        We do not sell your data. Analytics data may be processed by Firebase (Google) to provide usage
+                        insights.
+                    </p>
 
-                    <h2>7. Contact Us</h2>
-                    <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
-                    <p><strong>Email:</strong> <a href="mailto:feedback@soonish.app" style="color: var(--primary-light);">feedback@soonish.app</a></p>
+                    <h2>Changes</h2>
+                    <p>
+                        This policy may be updated. Any changes will be posted here.
+                    </p>
+
+                    <h2>Contact</h2>
+                    <p>
+                        If you have questions, contact:
+                    </p>
+                    <p>
+                        <strong>Email:</strong>
+                        <a href="mailto:info@buildnex.tech" style="color: var(--primary-light);">
+                            info@buildnex.tech
+                        </a>
+                    </p>
+
                 </div>
             </div>
         </div>
@@ -95,4 +130,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
