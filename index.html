@@ -13,8 +13,14 @@
     <div class="bg-gradient-spots"></div>
 
     <nav class="navbar">
-        <div class="container flex justify-between items-center">
+        <div class="container">
             <a href="/" class="logo">BuildNex.Tech</a>
+            <!-- Hamburger button (mobile only) -->
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="nav-links">
                 <a href="#apps">Apps</a>
                 <a href="mailto:info@buildnex.tech">Contact</a>
@@ -25,11 +31,10 @@
     <section class="hero">
         <div class="container flex-col items-center" style="text-align: center;">
             <div class="reveal">
-                <h1 class="font-display text-gradient"
-                    style="font-size: 4.5rem; margin-bottom: 1.5rem; margin-top: 4rem;">
+                <h1 class="font-display text-gradient" style="margin-bottom: 1.5rem; margin-top: 4rem;">
                     Stop overthinking simple tasks
                 </h1>
-                <p style="margin: 0 auto 2.5rem; max-width: 650px;">
+                <p>
                     I build simple apps that remove friction from everyday actions.
                     No clutter, no setup, no wasted time.
                 </p>
@@ -44,19 +49,17 @@
     <section id="apps" class="section">
         <div class="container">
             <div class="reveal" style="text-align: center; margin-bottom: 4rem;">
-                <h2 class="font-display" style="font-size: 2.5rem;">Apps</h2>
+                <h2 class="font-display">Apps</h2>
                 <p style="color: var(--text-muted); margin-top: 1rem;">
                     Built to be fast, simple, and actually usable.
                 </p>
             </div>
 
-            <div class="grid"
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
 
                 <!-- Soonish App Card -->
                 <div class="card reveal delay-100 flex-col" style="min-height: 380px;">
-                    <div
-                        style="background: rgba(124, 58, 237, 0.15); width: 64px; height: 64px; border-radius: 18px; margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 20px rgba(124, 58, 237, 0.1);">
+                    <div style="background: rgba(124, 58, 237, 0.15); width: 64px; height: 64px; border-radius: 18px; margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 20px rgba(124, 58, 237, 0.1);">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-light)"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"></circle>
@@ -64,13 +67,11 @@
                         </svg>
                     </div>
 
-                    <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem; color: #fff;">
-                        Soonish
-                    </h3>
+                    <h3 style="margin-bottom: 0.5rem; color: #fff;">Soonish</h3>
 
                     <p style="color: var(--text-muted); margin-bottom: 2rem; flex-grow: 1; font-size: 1.05rem;">
                         Type what you need to remember. Tap a time. Done.
-                        A simple reminder app for when you don’t want to deal with forms or planning.
+                        A simple reminder app for when you don't want to deal with forms or planning.
                     </p>
 
                     <a href="soonish.html" class="btn btn-secondary" style="width: 100%;">
@@ -81,17 +82,14 @@
                 <!-- Future App Card -->
                 <div class="card reveal delay-200 flex-col"
                     style="opacity: 0.6; border-style: dashed; min-height: 380px;">
-                    <div
-                        style="background: rgba(255, 255, 255, 0.05); width: 64px; height: 64px; border-radius: 18px; margin-bottom: 2rem; display: flex; align-items: center; justify-content: center;">
+                    <div style="background: rgba(255, 255, 255, 0.05); width: 64px; height: 64px; border-radius: 18px; margin-bottom: 2rem; display: flex; align-items: center; justify-content: center;">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                         </svg>
                     </div>
 
-                    <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem; color: var(--text-muted);">
-                        In Development
-                    </h3>
+                    <h3 style="margin-bottom: 0.5rem; color: var(--text-muted);">In Development</h3>
 
                     <p style="color: var(--text-muted); margin-bottom: 2rem; flex-grow: 1; font-size: 1.05rem;">
                         Working on the next simple tool to remove friction from everyday tasks.

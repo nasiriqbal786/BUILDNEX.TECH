@@ -7,57 +7,20 @@
     <meta name="description" content="Soonish - Simple reminders without the friction. Type it, tap a time, done.">
     <title>Soonish | By BuildNex.Tech</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .demo-placeholder {
-            width: 100%;
-            height: 500px;
-            background: linear-gradient(145deg, rgba(25, 20, 40, 0.8), rgba(12, 10, 20, 0.6));
-            border-radius: 24px;
-            border: 1px solid var(--border-color);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-            margin: 4rem auto;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .demo-placeholder::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at center, rgba(124, 58, 237, 0.15) 0%, transparent 60%);
-        }
-
-        .demo-text {
-            color: var(--text-muted);
-            font-size: 1.2rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            z-index: 1;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-    </style>
 </head>
 
 <body>
     <div class="bg-gradient-spots"></div>
 
     <nav class="navbar">
-        <div class="container flex justify-between items-center">
+        <div class="container">
             <a href="index.html" class="logo">BuildNex.Tech</a>
+            <!-- Hamburger button (mobile only) -->
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="nav-links">
                 <a href="index.html#apps">More Apps</a>
                 <a href="soonish-privacy.html">Privacy Policy</a>
@@ -65,11 +28,10 @@
         </div>
     </nav>
 
-    <section class="hero" style="min-height: auto; padding-top: 140px; padding-bottom: 40px;">
+    <section class="hero" style="min-height: auto; padding-bottom: 40px;">
         <div class="container flex-col items-center" style="text-align: center;">
             <div class="reveal">
-                <div
-                    style="background: rgba(124, 58, 237, 0.15); width: 80px; height: 80px; border-radius: 20px; margin: 0 auto 2rem; display: flex; align-items: center; justify-content: center;">
+                <div style="background: rgba(124, 58, 237, 0.15); width: 80px; height: 80px; border-radius: 20px; margin: 0 auto 2rem; display: flex; align-items: center; justify-content: center;">
                     <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-light)"
                         stroke-width="2">
                         <circle cx="12" cy="12" r="10"></circle>
@@ -77,11 +39,9 @@
                     </svg>
                 </div>
 
-                <h1 class="font-display text-gradient" style="font-size: 4rem; margin-bottom: 1rem;">
-                    Soonish
-                </h1>
+                <h1 class="font-display text-gradient" style="margin-bottom: 1rem;">Soonish</h1>
 
-                <p style="font-size: 1.4rem; color: #fff; max-width: 800px; margin: 0 auto 1.5rem; font-weight: 500;">
+                <p style="font-size: clamp(1.1rem, 3vw, 1.4rem); color: #fff; max-width: 800px; margin: 0 auto 1.5rem; font-weight: 500;">
                     Stop overthinking reminders.
                 </p>
 
@@ -103,53 +63,48 @@
             <div class="reveal delay-100">
                 <div class="demo-placeholder">
                     <div class="demo-text">
-                        [ Add 8–10 sec demo GIF here ]
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.4">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        <span>[ Add 8–10 sec demo GIF here ]</span>
                     </div>
                 </div>
             </div>
 
             <!-- Real-life examples -->
-            <div class="reveal delay-150" style="text-align:center; margin-top:2rem;">
-                <p style="color: var(--text-muted);">
-                    “Take the chicken out in 20 minutes”
-                    “Call John after this meeting”
-                    “Check laundry in 30 minutes”
+            <div class="reveal delay-150" style="text-align: center; margin-top: 2rem;">
+                <p style="color: var(--text-muted); font-style: italic; line-height: 2;">
+                    "Take the chicken out in 20 minutes" &nbsp;·&nbsp;
+                    "Call John after this meeting" &nbsp;·&nbsp;
+                    "Check laundry in 30 minutes"
                 </p>
             </div>
 
             <div class="feature-grid">
 
                 <div class="card reveal delay-200">
-                    <h3 style="font-size: 1.4rem; margin-bottom: 1rem; color: #fff;">
-                        Fast to use
-                    </h3>
+                    <h3 style="margin-bottom: 1rem; color: #fff;">Fast to use</h3>
                     <p style="color: var(--text-muted);">
                         Set a reminder in seconds. No forms, no setup.
                     </p>
                 </div>
 
                 <div class="card reveal delay-300">
-                    <h3 style="font-size: 1.4rem; margin-bottom: 1rem; color: #fff;">
-                        Quick time presets
-                    </h3>
+                    <h3 style="margin-bottom: 1rem; color: #fff;">Quick time presets</h3>
                     <p style="color: var(--text-muted);">
                         15 minutes, 30 minutes, 1 hour and more. Just tap and move on.
                     </p>
                 </div>
 
                 <div class="card reveal delay-400">
-                    <h3 style="font-size: 1.4rem; margin-bottom: 1rem; color: #fff;">
-                        Lock screen notifications
-                    </h3>
+                    <h3 style="margin-bottom: 1rem; color: #fff;">Lock screen notifications</h3>
                     <p style="color: var(--text-muted);">
                         Get reminded exactly when needed, even when your phone is locked.
                     </p>
                 </div>
 
                 <div class="card reveal delay-500">
-                    <h3 style="font-size: 1.4rem; margin-bottom: 1rem; color: #fff;">
-                        Private by design
-                    </h3>
+                    <h3 style="margin-bottom: 1rem; color: #fff;">Private by design</h3>
                     <p style="color: var(--text-muted);">
                         No accounts. No tracking. Everything stays on your device.
                     </p>
@@ -162,11 +117,11 @@
     <footer>
         <div class="container">
             <div class="flex flex-col items-center gap-4">
-                <div class="flex gap-4">
+                <div class="flex gap-4" style="flex-wrap: wrap; justify-content: center;">
                     <a href="index.html">BuildNex.Tech</a>
-                    <span>|</span>
+                    <span style="color: var(--border-color);">|</span>
                     <a href="soonish-privacy.html">Privacy Policy</a>
-                    <span>|</span>
+                    <span style="color: var(--border-color);">|</span>
                     <a href="mailto:info@buildnex.tech">Contact Support</a>
                 </div>
                 <p>&copy; 2026 BuildNex.Tech. All rights reserved.</p>
